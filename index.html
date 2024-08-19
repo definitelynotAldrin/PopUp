@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/39d1af4576.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<body>
+    <button class="btn-edit">click me</button>
+    <div class="popup-overlay"></div>
+    <div class="popup-form-container">
+        <div class="popup-form-header">
+            <h1>update item / add new stock</h1>
+            <i class="fa-regular fa-circle-xmark btn-close"></i>
+        </div>
+        <div class="popup-content">
+            <form action="" class="popup-form">
+                <div class="form-groups popup-form-groups">
+                    <div class="form-group">
+                        <label for="">item name</label>
+                        <input type="text" id="item_name" name="item_name">
+                    </div>
+                    <div class="form-group">
+                        <label for="">stocks quantity</label>
+                        <input type="number" id="stock_quantity" name="stock_quantity" step="1" min="0">
+                    </div>
+                </div>
+                <div class="menu-category item-category">
+                    <select name="item_category" id="">
+                        <option value="" hidden>select menu category</option>
+                        <option value="Main Course">main course</option>
+                        <option value="Dessert">Dessert</option>
+                        <option value="Beverages">beverages</option>
+                    </select>
+                </div>
+                <div class="form-groups button-group">
+                    <button class="btn-save">
+                        <i class="fa-regular fa-floppy-disk"></i>
+                        <span>save menu</span>
+                    </button>
+                </div>
+            </form> 
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
